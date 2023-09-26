@@ -32,12 +32,20 @@ export default async function Home() {
               className="object-cover rounded-lg border border-gray-500"
             />
           )}
-          <div className="mt-2 font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent ">
+          <div className="mt-4 font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent ">
             {project.title}
+            
+            
           </div>
         </Link>
       ))}
     </div>
   </div>
+
+  // <div>
+  //   {projects.map((project)=>(
+  //     <div key={project._id}>{project.title}</div>
+  //   ))}
+  // </div>
   )
 }
