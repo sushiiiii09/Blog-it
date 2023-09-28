@@ -20,6 +20,10 @@ export async function getProjects(): Promise<project[]> {
 }
 
 export async function getProject(slug: string): Promise<project> {
+  const client = createClient({
+    projectId: "06r0yci3",
+    dataset: "production",
+  });
   return client.fetch(
     groq`*[_type=="project" && slug.current==$slug][0]{
     _id,
