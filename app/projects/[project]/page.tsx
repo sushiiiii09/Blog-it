@@ -14,7 +14,7 @@ export default async function Project({ params }: Props) {
     <div className="p-24 border border-red-500">
       <header className="flex items-center justify-between border border-red-500">
         <h1 className="text-purple-700 text-5xl drop-shadow-sm font-extrabold">
-          hello
+          {project.title}
         </h1>
 
         <a
@@ -28,7 +28,7 @@ export default async function Project({ params }: Props) {
         </a>
       </header>
       <div className="border border-red-500 m-2">
-      {/* Image goes here */}
+      
       {project.image ? (
         <Image
           src={project.image}
@@ -41,7 +41,7 @@ export default async function Project({ params }: Props) {
         <div className="p-12 text-xl text-gray-700">No image available 🍃</div>
       )}
 
-      {/* Content goes here */}
+      
       <div className="text-lg text-gray-700 mt-5 prose px-12">
         <PortableText value={project.content} />
       </div>

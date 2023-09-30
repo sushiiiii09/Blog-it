@@ -1,4 +1,3 @@
-import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
@@ -18,14 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="max-w-3xl mx-auto py-10" >
+      <body>
       <header className="flex items-center justify-between">
-          <Link
-            href="/"
-            className=" text-4xl drop-shadow rounded-md  p-2 ml-8 "
-          >
-            SC.
-          </Link>
+          
           {/* <div className="flex items-center gap-5 text-sm text-gray-600">
             {pages.map((page) => (
               <Link href={`/${page.slug}`} key={page._id}>
