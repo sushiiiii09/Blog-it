@@ -1,9 +1,11 @@
+import project from '@/sanity/schemas/project';
 import { getProjects } from '@/sanity/utils/fetchData'
 import Image from 'next/image'
 import Link  from 'next/link';
 export default async function Home() {
 
   const projects=await getProjects();
+  console.log(projects)
   return (
     <div className="p-8 m-2">
     <h1 className="lg:text-7xl font-extrabold md:text-6xl text-4xl">

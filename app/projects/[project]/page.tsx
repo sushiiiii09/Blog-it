@@ -11,9 +11,9 @@ export default async function Project({ params }: Props) {
   const project = await getProject(slug);
 
   return (
-    <div className="p-24 border border-red-500">
-      <header className="flex items-center justify-between border border-red-500">
-        <h1 className="text-purple-700 text-5xl drop-shadow-sm font-extrabold">
+    <div className="p-24 ">
+      <header className="flex items-center justify-between">
+        <h1 className="text-purple-700 text-5xl drop-shadow-sm font-extrabold mb-2">
           {project.title}
         </h1>
 
@@ -22,12 +22,12 @@ export default async function Project({ params }: Props) {
           title="view project"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-purple-500 hover:text-pink-100 transition duration-500 ease-in-out"
+          className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-purple-500 hover:text-white transition duration-500 ease-in-out cursor-pointer"
         >
           View Project
         </a>
       </header>
-      <div className="border border-red-500 m-2">
+      <div className=" m-2">
       
       {project.image ? (
         <Image
